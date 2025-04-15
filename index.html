@@ -1,0 +1,532 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title> Portfolio_AHR</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		
+		<style>
+			#intro h1 {
+			  font-size: 3.5rem; /* ajuste ici selon ton goût */
+			  font-weight: 700;
+			  margin-bottom: 1rem;
+			  text-transform: none !important;
+			}
+		  
+			#intro h2 {
+			  font-size: 2.5rem;
+			  font-weight: 500;
+			  margin-bottom: 1.5rem;
+			  text-transform: none !important
+			}
+		  
+			#intro h3 {
+			  font-size: 1rem;
+			  color: #00ffee;
+			  font-weight: 600;
+			  margin-top: 1rem;
+			}
+		  
+			#intro p {
+			  font-size: 1.20rem;
+			  line-height: 1.6;
+			  max-width: 700px;
+			  margin: auto;
+			}
+			.name-highlight {
+  			color: #00ffee; /* bleu vif */
+  			font-weight: 700;
+			}
+			.blue-text {
+			color: #00ffee;
+			font-weight: 600;
+			}
+
+			.cursor {
+			display: inline-block;
+			margin-left: 2px;
+			color: #f1f3f8;
+			font-weight: bold;
+			animation: blink 1s infinite;
+			}
+
+			@keyframes blink {
+			0%, 100% { opacity: 1; }
+			50% { opacity: 0; }
+			}
+
+			.social-icons {
+			margin-top: 20px;
+			margin-bottom: 30px;
+			text-align: center;
+			}
+
+			.icon-link {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			width: 50px;
+			height: 50px;
+			margin: 0 10px;
+			border: 2px solid #00ffee;
+			border-radius: 50%;
+			color: #00ffee;
+			font-size: 1.5rem;
+			transition: all 0.3s ease;
+			text-decoration: none;
+			}
+
+			.icon-link:hover {
+			background-color: #00ffee;
+			color: #000;
+			box-shadow: 0 0 15px #00ffee, 0 0 30px #00ffee
+			}
+			.skills-grid {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+			margin-top: 30px;
+			}
+
+			.skill-block {
+			background-color: rgba(5, 1, 1, 0.626);
+			border: 1px solid #00ffee;
+			border-radius: 15px;
+			padding: 20px;
+			max-width: 250px;
+			text-align: center;
+			box-shadow: 0 0 10px #00ffee22;
+			transition: transform 0.3s ease;
+			}
+
+			.skill-block:hover {
+			transform: scale(1.05);
+			box-shadow: 0 0 20px #00ffee55;
+			}
+
+			.skill-block h3 {
+			color: #00ffee;
+			font-size: 1.2rem;
+			margin-bottom: 10px;
+			}
+
+			.skill-block p {
+			font-size: 1rem;
+			color: #ffffff;
+			line-height: 1.4;
+			}
+
+			.certif-badges {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 25px;
+			margin-top: 30px;
+			}
+
+			
+
+			.certif-badges {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 25px;
+			margin-top: 30px;
+			}
+
+			.certif-badge {
+			background-color: rgba(5, 1, 1, 0.626);
+			border: 1px solid #00ffee;
+			border-radius: 12px;
+			padding: 15px;
+			width: 230px;
+			text-align: center;
+			text-decoration: none;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			box-shadow: 0 0 10px #00ffee22;
+			}
+
+			.certif-badge:hover {
+			transform: scale(1.05);
+			box-shadow: 0 0 20px #00ffee88;
+			}
+
+			.certif-badge img {
+			height: 45px;
+			margin-bottom: 10px;
+			}
+
+			.certif-badge span {
+			display: block;
+			font-size: 0.9rem;
+			color: #ffffff;
+			font-weight: 500;
+			line-height: 1.3;
+			}
+			.certif-date {
+			display: block;
+			color: #ccc;
+			font-size: 0.75rem;
+			margin-top: 5px;
+			}
+
+
+
+			#main {
+			background-color: #e1edf0;
+			padding: 2rem;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		
+			}
+
+			.parcours-grid {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 40px;
+			margin: 2rem auto;
+			max-width: 1200px;
+			}
+
+			.parcours-column {
+			flex: 1 1 400px;
+			min-width: 320px;
+			}
+
+			.section-subtitle {
+			color: #00ffee;
+			font-size: 1.5rem;
+			margin-bottom: 1rem;
+			text-align: center;
+			}
+
+			.education-block {
+			background-color: rgba(5, 1, 1, 0.626);
+			border: 1px solid #00ffee;
+			border-radius: 12px;
+			padding: 1.5rem;
+			margin-bottom: 2rem;
+			box-shadow: 0 0 10px #00ffee22;
+			}
+
+			.education-block h4 {
+			color: #00ffee;
+			font-size: 1.1rem;
+			margin-bottom: 0.5rem;
+			}
+
+			.education-block p {
+			color: #ffffff;
+			font-size: 0.95rem;
+			line-height: 1.4;
+			margin: 0.4rem 0;
+			}
+						#footer {
+			background: linear-gradient(to right,  #010405, #000101);
+			background-color: transparent !important;
+			box-shadow: none !important;
+			border: none !important;
+			color: #ffffff !important;
+			margin: 0;
+			box-sizing: border-box;
+			width: 100% !important;
+			max-width: 100% !important;
+			padding: 20px 30px !important;
+			text-align: center;
+			}
+
+			#footer p {
+			font-size: 1.1rem;
+			line-height: 1.5;
+			margin-bottom: 20px;
+			margin-top: 25px;
+			}
+
+			#footer .social-icons {
+			margin-top: 10px;
+			display: flex;
+			justify-content: center; 
+			transform: translateX(40px);
+			}
+
+			#footer .icon-link {
+			color: #00ffee;
+			border-color: #00ffee;
+			}
+
+			#footer .icon-link:hover {
+			background-color: #00ffee;
+			color: #000;
+			}
+
+		  </style>
+		  
+
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+		  
+		  
+	</head>
+	
+	<body class="is-preload">
+		
+		
+		  
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						
+						
+
+						<h1>Bienvenue ! Moi, c'est <span class="name-highlight">Aleenzahra</span>...</h1>
+						<br/>
+						<h2> Data <span id="changing-role" class="blue-text"> analyst</span><span class="cursor">|</span></h2>
+						<h3>curieuse, déterminée et en recherche de nouveaux défis à relever.</h3>
+
+
+						<br />
+						<p>À travers ce portfolio, je vous invite à découvrir mes projets,<br/> mes compétences techniques, ainsi que mon parcours académique. <br/>
+							<br/>Mon objectif : résoudre des problèmes concrets grâce à la data. </p>
+						
+						<br />
+						<br />
+						<div class="social-icons">
+							<a href="mailto:aleenzahra.hr@gmail.com" class="icon-link"><i class="fas fa-envelope"></i></a>							
+							<a href="https://www.linkedin.com/in/aleenzahra-h/" target="_blank" class="icon-link"><i class="fab fa-linkedin"></i></a>
+						</div>
+
+						<ul class="actions">
+							<li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+							<header id="header">
+								<span class="logo">Compétences techniques</span>
+							  </header>	
+							  
+							<div class="skills-grid">
+								<div class="skill-block">
+								  <h3>🛠️ Outils</h3>
+								  <p>Python<br /> R<br /> SQL<br /> SAS <br /> Dataiku (Notion) <br /> Power BI</p>
+								</div>
+								<div class="skill-block">
+								  <h3>📊 Analyse de données</h3>
+								  <p>Économétrie <br /> Statistiques prédictives <br/> Techniques quantitatives</p>
+								</div>
+								<div class="skill-block">
+								  <h3>🤖 Machine Learning</h3>
+								  <p>Régression <br />Classification <br/> Clustering (K-Means) <br /> Réduction dimension</p>
+								</div>
+							  </div>
+
+							  <header id="header">
+								<span class="logo">Parcours</span>
+							  </header>
+							  
+							  <section class="parcours-grid">
+							  
+								<!-- Diplômes -->
+								<div class="parcours-column">
+								  <h3 class="section-subtitle">🎓 Diplômes</h3>
+							  
+								  <div class="education-block">
+									<h4>Master 2 - Économie appliquée</h4>
+									<p>Université Paris Est-Créteil<br>2023</p>
+									<br>
+									<p>Analyse de données, économétrie, séries temporelles,<br> économie de la santé,<br/> économie industrielle, économie de l'incertitude</p>
+								  </div>
+							  
+								  <div class="education-block">
+									<h4>Licence - Économie et Gestion</h4>
+									<p>Université Paris Est-Créteil<br>2021</p>
+									<br>
+									<p>Marketing, commerce international, microéconomie, macroéconomie</p>
+								  </div>
+								</div>
+							  
+								<!-- Expériences -->
+								<div class="parcours-column">
+								  <h3 class="section-subtitle">💼 Expériences</h3>
+							  
+								  <div class="education-block">
+									<h4>Stage – Data Scientist</h4>
+									<p>Cour des comptes</p>
+									<p>Avril 2023 - Octobre 2023</p>
+									<br>
+									<p> •	Manipulation et croisement de multiples bases de données <br>
+										•	Réalisation d’analyses statistiques et économétriques<br>
+										•	Data visualisation (librairie GGPLOT2, Rstudio) <br>
+										•	Revue de littérature, Veille méthodologique <br>
+										•	Collaboration interdisciplinaire <br></p>
+								  </div>
+							  
+								</div>
+							  
+							  </section>
+							  
+  
+
+							  <header id="header">
+								<span class="logo">Certifications</span>
+							  </header>	
+							
+							<!-- Certifications interactives -->
+							<div class="certif-badges">
+								<a href="https://www.credly.com/badges/a8a82997-b36d-4636-b9fe-df30ad693f73/public_url" target="_blank" class="certif-badge">
+								  <img src="images/sas_logo.png" alt="SAS Certification" />
+								  <span>
+									SAS Certified Specialist<br />Base Programming Using SAS 9.4<br />
+									<small class="certif-date">Février 2024</small>
+								  </span>
+								</a>
+								<a href="https://verify.skilljar.com/c/2tn87rxng534" target="_blank" class="certif-badge">
+								  <img src="images/dataiku_logo.png" alt="Dataiku Core Designer" />
+								  <span>
+									Dataiku Core Designer<br />
+									<small class="certif-date">Juin 2024</small>
+								  </span>
+								</a>
+							  </div>
+							  
+
+							  <br /> <br />Let’s dive in!  <br /> <br /><br /> </p>
+
+
+
+					  
+					</div>
+
+					<header id="header">
+						<span class="logo">Portfolio</span>
+					  </header>	
+
+
+
+				<!-- Main -->
+					<div id="main">
+						
+
+
+						<!-- Posts -->
+						<section class="posts">
+								
+								
+							<article>
+								<header>
+									<span class="date"></span>
+									<h2>Projet de stage M2 : <br />
+										Santé & climat extrême</h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/vagues_de_chaleur5.jpeg" alt="" /></a>
+								<p>  <p>
+									Ce projet prend la forme d’une note méthodologique, réalisée dans le cadre d’un stage de six mois au Département Analyse et Science des Données de la Cour des Comptes. Nous avons cherché à évaluer l’impact des vagues de chaleur sur la santé des populations vulnérables.
+								  </p>
+								  <p>
+									L’étude repose sur des modèles statistiques (régression de Poisson et quasi-Poisson) appliqués à des données de santé (passages aux urgences, hospitalisations, consultations, décès en EHPAD/SSIAD), croisées avec les données de température fournies par Météo France. L'ensemble des traitements et modélisations ont été réalisés à l’aide du logiciel R.
+								  </p>
+								  <p>
+									Nos analyses montrent une hausse marquée des passages aux urgences pendant les vagues de chaleur, en particulier chez les personnes âgées, tandis que les hospitalisations diminuent, probablement en raison d’un report des soins non urgents. Les effets varient selon la durée et l’intensité des vagues, le territoire et les pathologies concernées.
+								  </p>
+								  <p>
+									Ce travail fournit des éléments pour anticiper les besoins de soins en période de chaleur extrême, et enrichit les réflexions menées dans le cadre du <strong>rapport public annuel 2024</strong> de la Cour des Comptes.
+								  </p></p>
+								<ul class="actions special">
+									<li><a href="https://www.ccomptes.fr/sites/default/files/2024-03/20240312-note-methodologique-Statistique-chapitre-Personnes-vulnerables.pdf" class="button" target="_blank">Voir le projet</a></li>
+								</ul>
+							</article>
+							<article>
+								<header>
+									<span class="date"></span>
+									<h2>Projet de M2 : <br />
+										Détection du risque lombaire</h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/photo_lombaire.png" alt="" /></a>
+								<p>
+									L’objectif est de construire <strong>un modèle de classification</strong> permettant de prédire le risque de développer des douleurs lombaires à partir de caractéristiques biomécaniques issues d'examens radiologiques.
+								  </p>
+								  <p>
+									À partir du Vertebral Column Dataset (UCI, 310 observations), deux modèles sont entraînés : <strong>Random Forest</strong> et <strong>XGBoost</strong>.
+									Après nettoyage et analyse exploratoire, les performances sont évaluées par des métriques telles que l’exactitude, la précision et l’AUC.
+								  </p>
+								  <p>
+									Le modèle XGBoost atteint une <em>AUC de 0,78</em>, confirmant sa capacité à identifier les individus à risque et soulignant l’intérêt de ces outils pour la prévention en santé publique.
+								  </p>
+								  <ul class="actions special">
+									<li><a href="docs/projet-douleurs-lombaires.pdf" class="button" target="_blank">Voir le projet</a></li>
+									<li><a href="docs/code_lombaire.html" class="button" target="_blank">Voir le modèle</a></li>
+								  </ul>
+							</article>
+							<article>
+								<header>
+									<span class="date"></span>
+									<h2>Memoire de M1 : <br />
+									Barrières financières aux soins</h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/photo_renoncement2.png" alt="" /></a>
+								<p>Ce mémoire étudie les facteurs socio-économiques qui poussent certains individus à renoncer aux soins médicaux, dentaires ou optiques pour des raisons financières.
+
+								</p><p>L’analyse repose sur les données de l’enquête ESPS 2014, traitées à l’aide du logiciel SAS, via des régressions logistiques. L’impact de variables telles que l’âge, le sexe, le revenu, le diplôme, l’état de santé perçu ou encore la couverture complémentaire est évalué.
+									
+										</p><p>Les résultats montrent que les femmes, les personnes à faible revenu ou sans complémentaire santé sont les plus concernées. Les soins dentaires sont les plus touchés, suivis des soins optiques et des consultations médicales.
+									
+											</p><p>Cette étude contribue à évaluer l’équité du système de santé français et propose des pistes pour améliorer l’accès aux soins.</p>
+								<ul class="actions special">
+									<li><a href="\docs\memoire-renoncement.pdf" class="button" target="_blank">Voir le Projet</a></li>
+								</ul>
+							</article>
+							
+						</section>
+							
+
+
+
+				<!-- Footer -->
+				<footer id="footer">
+					<p>Si vous êtes intéressé par mon profil, n'hésitez pas à me contacter :</p>
+					<div class="social-icons">
+					  <a href="mailto:aleenzahra.hr@gmail.com" class="icon-link"><i class="fas fa-envelope"></i></a>									
+					  <a href="https://www.linkedin.com/in/aleenzahra-h/" target="_blank" class="icon-link"><i class="fab fa-linkedin"></i></a>
+					</div>
+				  </footer>
+				  
+
+					  
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				const roles = ["Analyst", "Scientist"];
+				let roleIndex = 0;
+				const roleElement = document.getElementById("changing-role");
+			  
+				setInterval(() => {
+				  roleIndex = (roleIndex + 1) % roles.length;
+				  roleElement.textContent = roles[roleIndex];
+				}, 2000);
+			  </script>
+			  
+			
+
+			
+			
+
+	</body>
+</html>
